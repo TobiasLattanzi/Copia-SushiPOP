@@ -1,0 +1,252 @@
+@font-face {
+    font-family: nunitoBold;
+    src: url(../lib/fonts/static/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family: nunitoLight;
+    src: url(../lib/fonts/static/Nunito-Light.ttf);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: nunitoBold;
+}
+html {
+    font-size: 14px;
+}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+html {
+    position: relative;
+    height: 100vh;
+}
+header nav .categorias-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 12px;
+}
+header nav .categorias-cont .nav-logo {
+    width: 140px;
+}
+header nav .categorias-cont .categorias ul li a {
+    font-family: nunitoBold;
+    font-size: 16.5px
+}
+header nav .categorias-cont .icons {
+    display: flex;
+    width: 140px;
+}
+header nav .categorias-cont .icons svg {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.main-cont .hero img {
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+.main-cont .hero p {
+    position: absolute;
+    margin-top: -210px;
+    left: 38%;
+    font-size: 42px;
+    color: #FFF;
+    line-height: 50px;
+    text-align: center;
+}
+.main-cont .hero p strong {
+    color: #F26569;
+}
+.favoritos {
+    margin-top: 30px;
+}
+.favoritos h1 {
+    font-family: nunitoBold;
+    color: #616572;
+    text-align: center;
+    margin-bottom: .5em;
+}
+.favoritos .favs-cont {
+    width: 55%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.favoritos .favs-cont .product-cont{
+    position: relative;
+}
+.p1 {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://sushipopimg.s3.amazonaws.com/productos/8f2fa8539ad4a62fe805c19e14f77ece9c41b790.jpg);
+    background-size: cover;
+}
+.p2 {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("https://fthmb.tqn.com/K_kSSs1ygbyQxVi75bLFdoJuHoQ=/1414x2121/filters:fill(auto,1)/GettyImages-683194578-5aa59577ba6177003761b609.jpg");
+    background-size: cover;
+}
+.p3 {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://media.lasvegasmagazine.com/media/img/photos/2022/09/08/Sushi_Nobu_CDV_IL2_t800.jpg?82acc990e83cbd9aea7ecc37464958abbe9dc656);
+    background-size: cover;
+}
+
+.p4 {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://www.waiter.com/blog/wp-content/uploads/2016/02/California-Sushi-Roll-2-1024x683.jpg);
+    background-size: cover;
+}
+.favoritos .favs-cont .product-cont {
+    margin: 15px;
+    min-width: 230px;
+    height: 14em;
+    border: 2.5px solid rgba(0,0,0,0.5);
+    flex: 1;
+}
+.favoritos .favs-cont .img-flexed{
+    flex: 2;
+}
+.favoritos .favs-cont .product-cont .text-cont {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    width:100%;
+    bottom: 0;
+}
+.favoritos .favs-cont .product-cont .text-cont p{
+    color: #FFFEFE;
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-align: center; 
+    padding: 8px;
+    margin-bottom: 0;
+    cursor: pointer;
+
+}
+.favoritos .favs-cont .product-cont .text-cont p:hover{
+    color: #EC1C24;
+}
+.seccion-banner {
+    margin-top: 20px;
+}
+.contenedor-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #F14342;
+    height: 15.1em;
+}
+.contenedor-banner .text-cont{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-banner .text-cont .texto-banner {
+    color: #FFFEFE;
+    font-family: nunitoBold;
+    font-size: 2.3em;
+    margin-bottom: 0;
+    text-align: justify;
+    display: inline;
+}
+.contenedor-banner .text-cont .texto-banner strong{
+    color: #FFDE59;
+    font-family: nunitoBold;
+}
+.contenedor-banner .text-cont .texto-strong {
+    color: #FFDE59;
+    font-family: nunitoBold;
+    font-size: 2.3em;
+    display: inline;
+}
+.img-banner {
+    margin-left:1em;
+    height:15em;
+    margin-right:6em;
+}
+.locales-cont{
+    margin-top: 20px;
+}
+.locales-cont p {
+    font-family: nunitoBold;
+    color: #616572;
+    text-align: center;
+    font-size: 45px;
+}
+.locales-cont .locales {
+    display: flex;
+    justify-content: center;
+}
+.locales-cont .locales .local{
+    margin: 15px;
+}
+.locales-cont .locales .local img {
+    width: 210px;
+    height: 150px;
+}
+.locales-cont .locales .local .detalles-local {
+    width: 210px;
+    height: 85px;
+    background: #000;
+    border: 2px solid #EC1C24
+}
+.locales-cont .locales .local .detalles-local .barrio-local{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: -10px;
+    width: fit-content;
+    height: 55px;
+}
+.locales-cont .locales .local .detalles-local .barrio-local a{
+    color: #EC1C24;
+    text-decoration: none;
+    font-size: 20px;
+}
+.locales-cont .locales .local .detalles-local .dir{
+    font-size: 14px;
+    font-family: nunitoLight;
+    color: #EC1C24;
+}
+.locales-cont .locales .local .detalles-local .barrio-local a:hover {
+    text-decoration: underline #EC1C24;
+}
+.locales-cont .aclaration {
+    margin-top: 20px;
+    font-size: 20px;
+}
+footer {
+    background: rgba(0, 0, 0, 0.8);
+}
+footer .columns {
+    display: flex;
+    margin-left: auto;
+    width: 80%;
+}
+footer .columns .col{
+    margin-top: 20px;
+}
+footer .columns .col1 img {
+    width: 130px;
+    cursor: pointer;
+}
+footer .columns .col a {
+    display: block;
+    font-family: nunitoLight;
+    text-decoration: none;
+    color: #FFF;
+}
+footer .columns .col a:hover {
+    color: #EC1C24;
+}
+footer .footer-container {
+    font-family: nunitoLight;
+    font-size: 12px;
+    text-align: center;
+    color: #FFF;
+    margin-top: 15px;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}

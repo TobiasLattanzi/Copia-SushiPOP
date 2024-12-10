@@ -1,0 +1,123 @@
+﻿@model IEnumerable<_2024_2C_SushiPOP_G1.Models.Descuento>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="hero">
+    <img src="./lib/imgs/hero.png" alt="sushi con amigos" />
+    @if (Model != null && Model.Any())
+    {
+        <p>
+            Hoy es <strong>asd.</strong> Ahorra un <strong>@Model.First().Porcentaje</strong> <br>
+            en <strong>@Model.First().Producto!.Nombre.</strong>
+        </p>
+    }
+    else
+    {
+        <p>
+            Hoy es <strong>@DateTime.Now.DayOfWeek.</strong> Disfrutá del mejor <br>
+            <strong>sushi #EnCasa</strong> con amigos.
+        </p>
+    }
+</section>
+
+
+<section class="favoritos">
+    <h1>Los favoritos 😉</h1>
+
+    <article class="favs-cont">
+        <div class="product-cont p1 img-flexed">
+            <div class="text-cont">
+                <p>Combo 100% salmón Alaska XL de 40 piezas</p>
+            </div>
+        </div>
+        
+        <div class="product-cont p2">
+            <div class="text-cont">
+                <p>Postre helado OREO</p>
+            </div>
+        </div>
+        
+        <div class="product-cont p3">
+            <div class="text-cont">
+                <p>Empanaditas chinas de carne</p>
+            </div>
+        </div>
+        
+        <div class="product-cont p4 img-flexed">
+            <div class="text-cont">
+                <p>Langostinos rebozados en panko fritos con salsa de tamarindo</p>
+            </div>
+        </div>
+    </article>
+</section>
+
+
+<section class="seccion-banner">
+    <div class="contenedor-banner">
+        <div class="text-cont">
+            <p class="texto-banner">
+                Hoy
+                <strong>@DateTime.Now.DayOfWeek</strong>
+                atendemos
+            </p>
+                @{
+                    int dia = (int)DateTime.Today.DayOfWeek;
+
+                    if (dia > 0 && dia < 5)
+                    {
+                    <p class="texto-banner">de 19 a 23 horas por WhatsApp <br /></p>
+                    }
+                    else
+                    {
+                    <p class="texto-banner">
+                        de 11 a 14 horas y de <br />
+                        19 a 23 horas por WhatsApp <br />
+                    </p>
+                    }
+                }
+            <strong class="texto-strong">+541140044004</strong>
+        </div>
+
+        <img class="img-banner" src="https://chi01pap002files.storage.live.com/y4mgnwEOjg4cF8OoKsPXAxTBsYbr_Kcv9MG3a6-h5soapYT7xxS4iVec3m9r-zVefO_8x5ZLtUtWi4h0_kngeUYpFso4mjiS841cpWqHpK7JLWXd-fyZW7ffr1FocsvhQ-TE5rymbWC67wVYczPiHqQGCuFNa5rpDWRVb2laCAUFD8-eejs5DpsO2qgXV4untD9?encodeFailures=1&width=560&height=375" />
+    </div>
+</section>
+
+
+<section class="locales-cont">
+    <p>Nuestros locales</p>
+
+    <div class="locales">
+        <article class="local">
+            <img src="./lib/imgs/local-palermo.jpeg" alt="local palermo" />
+            <div class="detalles-local">
+                <p class="barrio-local"><a asp-controller="Reservas" asp-action="Index">PALERMO</a></p>
+                <p class="dir">Alto Palermo local 1</p>
+            </div>
+        </article>
+        <article class="local">
+            <img src="./lib/imgs/local-recoleta.jpeg" alt="local palermo" />
+            <div class="detalles-local">
+                <p class="barrio-local"><a asp-controller="Reservas" asp-action="Index">RECOLETA</a></p>
+                <p class="dir">Callao 986</p>
+            </div>
+        </article>
+        <article class="local">
+            <img src="./lib/imgs/local-belgrano.jpeg" alt="local palermo" />
+            <div class="detalles-local">
+                <p class="barrio-local"><a asp-controller="Reservas" asp-action="Index">BELGRANO</a></p>
+                <p class="dir">Av. Monroe 2401</p>
+            </div>
+        </article>
+        <article class="local">
+            <img src="./lib/imgs/local-caballito.jpeg" alt="local palermo" />
+            <div class="detalles-local">
+                <p class="barrio-local"><a asp-controller="Reservas" asp-action="Index">CABALLITO</a></p>
+                <p class="dir">Av. Acoyte 234</p>
+            </div>
+        </article>
+    </div>
+
+    <p class="aclaration">Lunes a viernes de 11 a 15hs. y de 18 a 23:30hs. Sábado y domingo de 17 a 0hs.</p>
+</section>
